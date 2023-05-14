@@ -1,0 +1,11 @@
+Best audio:
+yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 <Video-URL>
+
+Best video:
+yt-dlp --format "bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best" --merge-output-format mp4 <Video-URL>
+
+Best video (no audio):
+yt-dlp --format "bestvideo/best" --merge-output-format mp4 <Video-URL>
+
+Best video (for Premiere):
+yt-dlp -f bestvideo[vcodec*=avc]+140 <Video-URL>
